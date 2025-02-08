@@ -41,39 +41,39 @@ message.post("/send", async (req, res) => {
   const mailOptions = {
     from: {
       name: "Portfolio Contact Form", // Sender name
-      address: "contactminatech@gmail.com",
+      address: process.env.SENDER,
     },
-    to: "alazar.damena7@gmail.com", // Your email address
+    to: process.env.USER, // Your email address
     subject: "New Message from Portfolio Contact Form", // Email subject
     html: `
       <div style="font-family: Arial, sans-serif; padding: 20px;">
-        <h2 style="color: #0077b6;">New Message from Portfolio Contact Form</h2>
+        <h2 style="color: #0047ab;">New Message from Portfolio Contact Form</h2>
         <p>Hello Alazar,</p>
         <p>You have received a new message from your portfolio contact form:</p>
         <table style="border-collapse: collapse; width: 100%;">
           <tr>
             <th style="text-align: left; padding: 10px; border-bottom: 1px solid #ddd;">Name:</th>
-            <td style="padding: 10px; border-bottom: 1px solid #ddd;">${data.name}</td>
+            <td style="padding: 10px; border-bottom: 1px solid #efbf04;">${data.name}</td>
           </tr>
           <tr>
             <th style="text-align: left; padding: 10px; border-bottom: 1px solid #ddd;">Email:</th>
-            <td style="padding: 10px; border-bottom: 1px solid #ddd;">${data.email}</td>
+            <td style="padding: 10px; border-bottom: 1px solid #efbf04;">${data.email}</td>
           </tr>
           <tr>
             <th style="text-align: left; padding: 10px; border-bottom: 1px solid #ddd;">Location:</th>
-            <td style="padding: 10px; border-bottom: 1px solid #ddd;">${data.location}</td>
+            <td style="padding: 10px; border-bottom: 1px solid #efbf04;">${data.location}</td>
           </tr>
           <tr>
             <th style="text-align: left; padding: 10px; border-bottom: 1px solid #ddd;">Budget:</th>
-            <td style="padding: 10px; border-bottom: 1px solid #ddd;">${data.budget}</td>
+            <td style="padding: 10px; border-bottom: 1px solid #efbf04;">${data.budget}</td>
           </tr>
           <tr>
             <th style="text-align: left; padding: 10px; border-bottom: 1px solid #ddd;">Subject:</th>
-            <td style="padding: 10px; border-bottom: 1px solid #ddd;">${data.subject}</td>
+            <td style="padding: 10px; border-bottom: 1px solid #efbf04;">${data.subject}</td>
           </tr>
           <tr>
             <th style="text-align: left; padding: 10px; border-bottom: 1px solid #ddd;">Message:</th>
-            <td style="padding: 10px; border-bottom: 1px solid #ddd;">${data.message}</td>
+            <td style="padding: 10px; border-bottom: 1px solid #efbf04">${data.message}</td>
           </tr>
         </table>
       </div>

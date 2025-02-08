@@ -83,7 +83,7 @@ message.post("/send", async (req, res) => {
   try {
     // Send the email
     await sendMail(transporter, mailOptions);
-    res.status(201).json({ message: `Email successfully sent to ${data.email}` });
+    res.status(201).json({ message: `Email successfully sent from ${data.email}` });
   } catch (error) {
     console.error("Error:", error.message);
     res.status(400).json({ message: "Unable to send email. Please try again later." });

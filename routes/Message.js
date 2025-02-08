@@ -41,7 +41,7 @@ message.post("/send", async (req, res) => {
   const mailOptions = {
     from: {
       name: "Portfolio Contact Form", // Sender name
-      address: process.env.USER, // Your Gmail email address
+      address: "contactminatech@gmail.com",
     },
     to: "alazar.damena7@gmail.com", // Your email address
     subject: "New Message from Portfolio Contact Form", // Email subject

@@ -53,27 +53,27 @@ message.post("/send", async (req, res) => {
         <table style="border-collapse: collapse; width: 100%;">
           <tr>
             <th style="text-align: left; padding: 10px; border-bottom: 1px solid #ddd;">Name:</th>
-            <td style="padding: 10px; border-bottom: 1px solid #efbf04;">${data.name}</td>
+            <td style="padding: 10px; color: #efbf04; font:semi-bold; border-bottom: 1px solid #ddd;">${data.name}</td>
           </tr>
           <tr>
             <th style="text-align: left; padding: 10px; border-bottom: 1px solid #ddd;">Email:</th>
-            <td style="padding: 10px; border-bottom: 1px solid #efbf04;">${data.email}</td>
+            <td style="padding: 10px; color: #efbf04; font:semi-bold; border-bottom: 1px solid #ddd;">${data.email}</td>
           </tr>
           <tr>
             <th style="text-align: left; padding: 10px; border-bottom: 1px solid #ddd;">Location:</th>
-            <td style="padding: 10px; border-bottom: 1px solid #efbf04;">${data.location}</td>
+            <td style="padding: 10px; color: #efbf04; font:semi-bold; border-bottom: 1px solid #ddd;">${data.location}</td>
           </tr>
           <tr>
             <th style="text-align: left; padding: 10px; border-bottom: 1px solid #ddd;">Budget:</th>
-            <td style="padding: 10px; border-bottom: 1px solid #efbf04;">${data.budget}</td>
+            <td style="padding: 10px; color: #efbf04; font:semi-bold; border-bottom: 1px solid #ddd;">${data.budget}</td>
           </tr>
           <tr>
             <th style="text-align: left; padding: 10px; border-bottom: 1px solid #ddd;">Subject:</th>
-            <td style="padding: 10px; border-bottom: 1px solid #efbf04;">${data.subject}</td>
+            <td style="padding: 10px; color: #efbf04; font:semi-bold; border-bottom: 1px solid #ddd;">${data.subject}</td>
           </tr>
           <tr>
             <th style="text-align: left; padding: 10px; border-bottom: 1px solid #ddd;">Message:</th>
-            <td style="padding: 10px; border-bottom: 1px solid #efbf04">${data.message}</td>
+            <td style="padding: 10px; color: #efbf04; font:semi-bold; border-bottom: 1px solid #ddd">${data.message}</td>
           </tr>
         </table>
       </div>

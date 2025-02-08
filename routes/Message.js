@@ -41,9 +41,9 @@ message.post("/send", async (req, res) => {
   const mailOptions = {
     from: {
       name: "Portfolio Contact Form", // Sender name
-      address: process.env.SENDER,
+      address: process.env.USER,
     },
-    to: process.env.USER, // Your email address
+    to: process.env.SENDER, // Your email address
     subject: "New Message from Portfolio Contact Form", // Email subject
     html: `
       <div style="font-family: Arial, sans-serif; padding: 20px;">
